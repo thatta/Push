@@ -1,0 +1,6 @@
+Bean\Administrador.class
+Modelo\Persona.class
+Bean\Clientes.class
+Modelo\Accion.class
+push\Notificacion.class
+Bean\ClientesSession.class
