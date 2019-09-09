@@ -31,11 +31,7 @@ import org.primefaces.push.EventBusFactory;
 @ManagedBean
 @RequestScoped
 public class Clientes implements Serializable{
-    
-    /**
-     * 
-     */
-    
+   
     private String nombre;
     private String apellido;
     private int documento;
@@ -48,7 +44,7 @@ public class Clientes implements Serializable{
  
     }
     /**
-     * 
+     * ManagedProperty nos permite inyectar un bean administrado en otro bean administrado 
      */
     @ManagedProperty("#{clientesSession}") 
     private ClientesSession clientesSession; 
@@ -60,6 +56,7 @@ public class Clientes implements Serializable{
     /**
      * 
      * @return 
+     * 
      */
     public ClientesSession getClientesSession() {
         return clientesSession;
@@ -87,9 +84,6 @@ public class Clientes implements Serializable{
     public void setAdministrador(Administrador administrador) {
         this.administrador = administrador;
     }
-    
-    
-    
 
     /**
      * 
@@ -142,7 +136,9 @@ public class Clientes implements Serializable{
     public void setDocumento(int documento) {
         this.documento = documento;
     }
-    
+    /**
+     * 
+     */
     
     FacesContext fCtx = FacesContext.getCurrentInstance();
     HttpSession session = (HttpSession) fCtx.getExternalContext().getSession(false);

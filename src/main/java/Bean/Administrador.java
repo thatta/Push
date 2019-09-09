@@ -24,13 +24,10 @@ import javax.faces.bean.ManagedBean;
 @ApplicationScoped
 public class Administrador implements Serializable{
     
-    /**
-     * 
-     */
-
     private List<Accion> listaAcciones;
+    
     /**
-     * 
+     * Constructor de la clase Administrador que crea  un ArrayList para recibir las acciones que haga una persona
      */
     
     public Administrador() {
@@ -39,6 +36,7 @@ public class Administrador implements Serializable{
     /**
      * 
      * @return 
+     * funcion get para obtener la lista de las acciones
      */
     public List<Accion> getListaAcciones() {
         return listaAcciones;
@@ -46,6 +44,7 @@ public class Administrador implements Serializable{
     /**
      * 
      * @param listaAcciones 
+     * funcion set para modificar la lista de las acciones
      */
 
     public void setListaAcciones(List<Accion> listaAcciones) {
